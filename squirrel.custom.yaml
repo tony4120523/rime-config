@@ -1,0 +1,8 @@
+# Squirrel settings
+# encoding: utf-8
+patch:
+
+  # VSCode 開啟中文輸入
+  app_options:
+    com.microsoft.VSCode:
+      ascii_mode: false

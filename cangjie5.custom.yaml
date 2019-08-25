@@ -1,0 +1,13 @@
+# cangjie5.custom.yaml
+patch:
+
+  # 關閉碼表輸入法連打
+  translator/enable_sentence: false
+  # 空碼時按空格鍵清空輸入碼
+  key_binder/bindings:
+    - {when: has_menu, accept: space, send: space}
+    - {when: composing, accept: space, send: Escape}
+  # 關閉倉頡與拼音混打，但仍可在敲 ` 之後輸入拼音
+  abc_segmentor/extra_tags: {}
+  # 三代字典
+  translator/dictionary: "cangjie5.cj3ext"
