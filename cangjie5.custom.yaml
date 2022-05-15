@@ -11,3 +11,23 @@ patch:
   abc_segmentor/extra_tags: {}
   # 三代字典
   translator/dictionary: "cangjie5.cj3ext"
+  # / 鍵引導特殊符號
+  recognizer/patterns/punct: '^/[a-z]*$'
+  punctuator/import_preset: symbols
+  # 自訂符號短語
+  punctuator/symbols:
+    # '/email': chen.sst@gmail.com
+    # '/fz': &fz
+    #   - 佛振 <chen.sst@gmail.com>
+    #   - 上天赋予你高的智商　教你用到有用的地方
+    # '/me': *fz
+    # '/rime':
+    #   - 中州韻輸入法引擎
+    #   - Rime Input Method Engine
+    #   - http://code.google.com/p/rimeime/
+    #   - http://rimeime.github.io
+    # '/lotem': https://github.com/lotem
+    # '/github': http://github.com
+    # 常用符號/物理
+    # '/wuli': [ °, °C, Ω, Φ, m², cm², km², m³ ]
+    '/f': [ ㄅ, ㄉ, ㄇ, ㄋ, ㄌ, ㄍ, ㄎ, ㄏ, ㄑ, ㄘ, ㄊ ]
